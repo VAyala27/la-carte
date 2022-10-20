@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-container{
+    background: url('https://i.postimg.cc/fRbVkgFL/la-carte-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-text{
+    background: rgba(220,45,64,1);
+    color: #fff;
+    padding: 10px 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text img{
+    margin-bottom: 2rem;
+    width: 225px;
+}
+
+.hero-text h1{
+    margin-bottom: 2rem;
+}
+
+.hero-text p{
+    margin-bottom: 2rem;
+}
+
+.hero-text input{
+    margin-bottom: 2rem;
+}
+
+.hero-text .btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(238,169,20,1);
+    padding: 15px 30px;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .hero-text{
+        right: 0px;
+        width: 50%;
+    }
+ }
+
+ @media screen and (max-width: 750px) {
+    .hero-text{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+        margin-top: 35px;
+    }
+ }
+
+ @media screen and (max-width: 399.99px) {
+    
+    .hero-text img{
+        margin-bottom: 1rem;
+        width: 125px;
+    }
+    
+    .hero-text h1{
+        margin-bottom: 1rem;
+        font-size: 24px;
+    }
+    
+    .hero-text p{
+        margin-bottom: 1rem;
+        font-size: 14px;
+    }
+    
+    .hero-text input{
+        margin-bottom: 1rem;
+    }
+    
+    .hero-text .btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+ }
